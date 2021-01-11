@@ -1,0 +1,11 @@
+@import '../../../variables';
+
+.pill {
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: gray;
+  border: 1px solid $darken;
+  background-color: $darken;
+  padding: 3px;
+  border-radius: 5px;
+}

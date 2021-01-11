@@ -1,0 +1,71 @@
+@import '../../../variables';
+
+.post {
+  border: 1px solid #212121;
+  border-radius: 4px;
+
+  background-color: $darken;
+  color: whitesmoke;
+
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  display: flex;
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+  }
+
+  .thumbnail img {
+    width: 64px;
+    height: 64px;
+
+    margin-right: 15px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  .title {
+    flex: 1 1 auto;
+    margin-top: 0;
+  }
+
+  .footer {
+    display: flex;
+
+    .left {
+      flex: 1 1 auto;
+      display: flex;
+    }
+
+    .right {
+      display: flex;
+
+      .author:hover {
+        text-decoration: underline;
+      }
+
+      /deep/ .pill {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  svg {
+    position: relative;
+    top: 1px;
+    padding-right: 2px;
+  }
+}
+
+.sticky {
+  border-top: 4px solid #66bb6a;
+}
+
+.pill {
+  margin-left: 5px;
+}

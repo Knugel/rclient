@@ -18,7 +18,7 @@ export interface IPost extends IVotable, ICreated {
   hide_score: boolean
   name: string
   quarantine: boolean
-  link_flair_text_color: string
+  link_flair_text_color: 'light' | 'dark'
   author_flair_background_color?: string
   subreddit_type: string
   total_awards_received: number
