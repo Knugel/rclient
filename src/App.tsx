@@ -5,7 +5,7 @@ import Post from './components/post/Post';
 
 export default function App(): ReactElement {
     return (
-        <Router>
+        <Router basename='/rclient'>
             <Switch>
                 <Route exact path="/">
                 </Route>
