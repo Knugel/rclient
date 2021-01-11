@@ -16,10 +16,21 @@
     background-color: rgba(255, 255, 255, 0.05);
     color: whitesmoke;
     margin-top: 10px;
+    display: flex;
+}
+
+.post .thumbnail {
+    width: 128px;
+    height: 128px;
+    margin-right: 15px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 
 .post .title {
     margin-top: 0;
+    flex: 1 1 auto;
 }
 
 .post .author {
@@ -58,6 +69,13 @@
 
 .post .footer {
     display: flex;
+    justify-self: flex-end;
+}
+
+.post .post-body {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
 }
 
 .post .footer .right {

@@ -1,6 +1,6 @@
-import { Created, Votable } from './listing';
+import { ICreated, IVotable } from './listing';
 
-export interface Post extends Votable, Created {
+export interface IPost extends IVotable, ICreated {
   approved_at_utc?: Date
   subreddit: string
   selftext: string
@@ -22,7 +22,7 @@ export interface Post extends Votable, Created {
   author_flair_background_color?: string
   subreddit_type: string
   total_awards_received: number
-  media_embed: Media
+  media_embed: IMedia
   author_flair_template_id?: string
   is_original_content: boolean
   user_reports: any[] // TODO: Type
@@ -98,14 +98,14 @@ export interface Post extends Votable, Created {
   is_video: boolean
 }
 
-export interface Media {
+export interface IMedia {
   content: string
   width: number
   height: number
   scrolling: boolean
 }
 
-export interface About extends Created {
+export interface IAbout extends ICreated {
   user_flair_background_color?: string
   submit_text_html?: string
   restrict_posting: boolean

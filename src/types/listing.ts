@@ -25,13 +25,13 @@ export enum Kind {
   Award = 't6'
 }
 
-export interface Votable {
+export interface IVotable {
   ups: number
   downs: number
   likes?: boolean
 }
 
-export interface Created {
+export interface ICreated {
   created: number
   created_utc: number
 }

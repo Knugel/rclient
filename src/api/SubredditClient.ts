@@ -1,12 +1,12 @@
-import { About, Data, Listing, Post } from '../types';
+import { IAbout, Data, Listing, IPost } from '../types';
 import APIClient from './APIClient';
 
 class SubredditClient {
-    public async about(id: string): Promise<Data<About>> {
+    public async about(id: string): Promise<Data<IAbout>> {
         return await APIClient.get(`r/${id}/about`);
     }
 
-    public async posts(id: string, after?: string): Promise<Listing<Post>> {
+    public async posts(id: string, after?: string): Promise<Listing<IPost>> {
         const params = new URLSearchParams({'raw_json': '1'});
         if(after)
             params.append('after', after);
