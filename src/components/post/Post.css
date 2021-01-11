@@ -1,0 +1,43 @@
+.container {
+    display: grid;
+    grid-template-columns: [empty] 1fr [content] 2fr [sidebar] 1fr;
+    background-color: #121212;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .container {
+        grid-template-columns: [content] 1fr;
+        font-size: .8em;
+    }
+}
+
+.content {
+    grid-column: content;
+}
+
+.md-spoiler-text {
+    filter: blur(5px);
+    transition: all .5s;
+}
+
+.md-spoiler-text:hover {
+    filter: blur(0px);
+}
+
+.comment .md {
+    color: white;
+}
+
+.comment {
+    padding: 10px;
+    border: 1px solid #212121;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: whitesmoke;
+    margin-top: 10px;
+}
+

@@ -1,0 +1,116 @@
+.container {
+    display: grid;
+    grid-template-columns: [empty] 1fr [content] 2fr [sidebar] 1fr;
+    background-color: #121212;
+}
+
+.content {
+    grid-column: content;
+}
+
+.post {
+    padding: 10px;
+    border: 1px solid #212121;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: whitesmoke;
+    margin-top: 10px;
+}
+
+.post .title {
+    margin-top: 0;
+}
+
+.post .author {
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: gray;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.post .author span:hover {
+    text-decoration: underline;
+}
+
+.post .upvotes {
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: gray;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.post .comments {
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: gray;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.post .footer {
+    display: flex;
+}
+
+.post .footer .right {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+}
+
+.post .footer .left {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1 1 auto;
+}
+
+.post .footer .right > span {
+    margin-left: 5px;
+}
+
+.post .upvotes > svg {
+    position: relative;
+    top: 1px;
+    padding-right: 2px;
+}
+
+.post .comments > svg {
+    position: relative;
+    top: 1px;
+    padding-right: 2px;
+}
+
+.post .flair {
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: gray;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.post .flair.dark {
+    color: black;
+}
+
+.post.flair.light {
+    color: white;
+}
+
+.post .sticky-pin {
+    float: right;
+    color: #66bb6a;
+}
+
+.post.sticky {
+    border-top: 4px solid #66bb6a;
+}
